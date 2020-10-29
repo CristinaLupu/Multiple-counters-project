@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: url("/assets/mainBcg.jpeg") center/cover no-repeat;
+}
+.containers {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.counter-container {
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 3rem;
+  width: 500px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.9);
+}
+.counter-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.counter-nr {
+  font-size: 9rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.counter-btns {
+  display: flex;
+  justify-content: space-around;
+}
+.counter-btns button {
+  font-family: inherit;
+  text-transform: inherit;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #0d2c54;
+  color: #fff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.9);
+  outline: transparent;
+}
+.counter-btns button:hover {
+  background-color: #00a6ed;
+}
+@media only screen and (max-width: 1040px) {
+  .containers {
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+  .counter-container {
+    width: 700px;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .counter-container {
+    width: 500px;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .counter-container {
+    width: 300px;
+  }
+  .counter-btns {
+    flex-wrap: wrap;
+  }
+  .counter-btns button {
+    margin-top: 1rem;
+  }
+}
